@@ -1,0 +1,5 @@
+<ul class="titles">
+	{{#each model}}
+		{{#unless data.stickied}}<li><a {{bind-attr href=url}}>{{title}}</a> {{domain}}</li>{{/unless}}
+	{{/each}}
+</ul>
